@@ -10,6 +10,8 @@ use Illuminate\Database\Eloquent\Model;
 class User extends Authenticatable
 {
     use Notifiable;
+    use HasFactory;
+
 
     /**
      * The attributes that are mass assignable.
@@ -43,5 +45,7 @@ class User extends Authenticatable
     public function subscription(){
         return $this->hasMany('App\Models\Subscription');
     }
+
+
 
 }
