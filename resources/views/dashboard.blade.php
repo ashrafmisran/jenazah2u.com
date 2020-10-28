@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('page-title', __('Dashboard') )
-@section('second-breadcrumb', __('Second') )
+{{-- @section('second-breadcrumb', __('Second') )
 @section('third-breadcrumb', __('Third') )
-@section('fourth-breadcrumb', __('Fourth') )
+@section('fourth-breadcrumb', __('Fourth') ) --}}
 
 @section('content')
 
