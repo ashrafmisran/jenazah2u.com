@@ -6,5 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Subscription extends Model
 {
-    //
+    // Get the details of the user
+    public function user(){
+        return $this->belongsTo('App\Models\User');
+    }
 }

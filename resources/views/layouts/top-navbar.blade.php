@@ -41,11 +41,11 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                             </li>
-                            @endif
-                            @else
-                            <li class="nav-item d-none d-md-block">
-                                <button class="nav-link btn btn-danger text-white" data-toggle="modal" data-target="#emergency-modal">{{ __('EMERGENCY') }}</button>
-                            </li>
+                        @endif
+                    @else
+                        <li class="nav-item d-none d-md-block">
+                            <button class="nav-link btn btn-danger text-white" data-toggle="modal" data-target="#emergency-modal">{{ __('EMERGENCY') }}</button>
+                        </li>
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->alias }}
