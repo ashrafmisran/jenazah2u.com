@@ -12,7 +12,7 @@
             <div class="card mb-4">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col-12 col-md-6"><h3>{{__('Package')}}</h3></div>
+                        <div class="col-12 col-md-6"><h3>{{__('Plan')}}</h3></div>
                         <div class="col-12 col-md-6 d-flex justify-content-md-end"><button class="btn btn-primary" data-toggle="modal" data-target="#modal-subscription">{{__('Change')}}</button></div>
                     </div>
                 </div>

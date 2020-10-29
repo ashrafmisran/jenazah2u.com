@@ -58,12 +58,19 @@
             </div>
         </div>
         
-        <main class="py-4">
-            <div class="container">
-                <h1 class="mt-4 mb-4">@yield('page-title')</h1>
-                @yield('content')
+        @hasSection ('unique-page')
+            {{-- Offset created space for navbar and breadcrumb --}}
+            <div style="margin-top:-3.5rem"> 
+                @yield('unique-page')
             </div>
-        </main>
+        @else
+            <main class="py-4">
+                <div class="container">
+                    <h1 class="mt-4 mb-4">@yield('page-title')</h1>
+                    @yield('content')
+                </div>
+            </main>
+        @endif
         <div style="height:2.5rem"></div>
     </div>
 </body>
